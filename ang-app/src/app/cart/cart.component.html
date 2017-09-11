@@ -1,0 +1,3 @@
+<p [textContent]="items"></p>
+<input type="text" [(ngModel)]="newItem">
+<button (click)="onAddItem($event)" [value]="newItem">Add {{newItem}}</button>
