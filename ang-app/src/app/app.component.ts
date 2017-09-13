@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-
+import 'lodash';
+  
+/*allow TS access js module*/  
+declare var _: any;  
+  
 /*decorate (add to) imported component with additional information. #ik*/
 @Component({
    /*anchor point and assets. #ik*/
