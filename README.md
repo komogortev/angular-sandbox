@@ -1,5 +1,32 @@
 # AngApp
 
+App Quickstart
+# $ npm install @angular/cli
+# $ ng new <project name>
+# $ cd <project name>
+# $ ng serve -p 8080 -H 0.0.0.0 --public-host angular-sandbox-komogortev.c9users.io
+
+
+App default styling
+# $ npm install bootstrap --save
+## .angular-cli.json -> <...>styles": ["../node_modules/bootstrap/dist/css/bootstrap.min.css",<...>
+#  npm install --save @types/lodash
+
+Create component module
+# $ ng g c <module name> --spec false #//optional spec file file for testing ##// run in app folder @ik
+
+Create service
+# $ ng g s <service name> --spec false #//optional spec file for testing 
+
+---------------------------------------------------------------------------
+Git sync
+# $ git init
+# $ git add .
+# $ git commit -m "first commit"
+# $ git remote add origin https://github.com/username/project.git84
+# $ git push -u origin master
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
 
 ## Development server

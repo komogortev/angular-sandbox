@@ -1,0 +1,9 @@
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+sapn.error{
+  display: none;
+}
+input.ng-invalid.ng-touched + span.error{
+  display: inline-block;
+}
