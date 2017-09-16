@@ -1,25 +1,33 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { StarWarsService } from '../star-wars.service';
 
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
   styleUrls: ['./item.component.css']
+  
 })
 export class ItemComponent implements OnInit {
 
   @Input() character;
-  //inform top level element of event occured
-  @Output() sideAssigned = new EventEmitter<{name: string, side: string}>(); 
-
-  constructor() { }
+   
+  swService: StarWarsService;
+  
+  //add swService as dependency 
+  constructor(swService: StarWarsService) {
+    this.swService = swService;   
+  
+  }
 
   ngOnInit() {
   }
   
   onAssign(side) {
     // this.character.side = side; 
-    this.sideAssigned.emit({name: this.character.name, side: side});
-    
+    // this.sideAssigned.emit({name: this.character.name, side: side});
+     
+    this.swService.onsideChosen({name: this.character.name, side: side});
+  
   }
 
 }
