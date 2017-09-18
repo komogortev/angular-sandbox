@@ -5,7 +5,8 @@ App Quickstart
 # $ ng new <project name>
 # $ cd <project name>
 # $ ng serve -p 8080 -H 0.0.0.0 --public-host angular-sandbox-komogortev.c9users.io
-
+---------------------
+# $ ng build --env=prod --output-hashing
 
 App default styling
 # $ npm install bootstrap --save
